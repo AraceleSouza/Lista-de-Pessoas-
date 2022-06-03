@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Usuários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+            <h4 class="title">Lista de Pessoas</h4>
+            <button id="displayButton" onclick="getData()">Exibir lista</button>
+            </div>
+            <br>
+            <small class="subtitle">Pesquisar por nome</small>
+            <input type="text" placeholder="Digite um nome" id="filter">
+            <select id="select">
+                <option>Selecione um país</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Australia">Australia</option>
+                <option value="Canada">Canada</option>
+                <option value="Chile">Chile</option>
+                <option value="Germany">Germany</option>
+                <option value="Dermark">Dermark</option>
+                <option value="Spain">Spain</option>
+                <option value="Finland">Finland</option>
+                <option value="France">France</option>
+                <option value="Great Britain">Great Britain</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Iran">Iran</option>
+                <option value="Norway">Norway</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Turkey">Turkey</option>
+                <option value="United States">United States</option>
+            </select>
+        </header>
+        <ul id="result" class="user-list">
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
